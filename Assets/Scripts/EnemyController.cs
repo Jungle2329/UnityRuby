@@ -101,6 +101,8 @@ public class EnemyController : MonoBehaviour
     public void Fix()
     {
         isBroken = false;
+        // 关闭碰撞检测
         _rigidbody2D.simulated = false;
+        _animator.SetTrigger("Fixed");
     }
 }
